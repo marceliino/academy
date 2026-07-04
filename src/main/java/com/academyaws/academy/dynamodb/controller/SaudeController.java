@@ -1,4 +1,4 @@
-package com.academyaws.academy.controller;
+package com.academyaws.academy.dynamodb.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class SaudeController {
         SimpleDateFormat formatador = new SimpleDateFormat("HH:mm:ss");
         String horaFormatada = formatador.format(dataHoraAtual);
 
-        System.out.println("Hora atual: " + horaFormatada);
+        System.out.println("Hora atual eh: " + horaFormatada + " show");
 
         Map<String, String> response = new HashMap<>();
         response.put("status", "Running");
